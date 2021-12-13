@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="none">     <!-- data-provider-thread-count="3" -->
+	<listeners>
+		<listener class-name="selenium.utility.IAnnotationListener" />
+		<listener class-name="selenium.utility.TestNGListeners" />
+	</listeners>
+	<test name="ChromeTest">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<!-- <class name="selenium.POM.ThreadLocal.CucumberRunner.RunnerforChrome"/> -->
+			<class name="selenium.POM.ThreadLocal.CucumberRunner.RunnerforS0116_Chrome"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test name="FireFoxTest">
+		<parameter name="Browser" value="Firefox" />
+		<classes>
+			<class name="selenium.POM.ThreadLocal.CucumberRunner.RunnerforFirefox"/>
+		</classes>
+	</test> Test -->
+</suite> <!-- Suite -->
